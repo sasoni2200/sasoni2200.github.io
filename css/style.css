@@ -45,9 +45,10 @@ Table of Content:
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 .list {
+  align-self: center;
   list-style: none;
-  margin: 0px;
-  padding: 0px; }
+  margin-left: -38px;
+  }
 
 a {
   text-decoration: none;
@@ -61,10 +62,11 @@ a {
 
 body {
   line-height: 26px;
-  font-size: 16px;
+  font-size: inherit;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
-  color: #777777; }
+  color: #777777;
+  }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Heebo", sans-serif;
@@ -129,7 +131,12 @@ button:focus {
 /* End Main Title Area css
 ============================================================================================ */
 /*---------------------------------------------------- */
+
+.d-flex {
+  width: fit-content;
+}
 /*----------------------------------------------------*/
+
 .header_area {
   position: absolute;
   width: 100%;
@@ -320,11 +327,8 @@ button:focus {
     display: flex; }
     .home_banner_area .banner_inner .banner_content {
       color: #222222;
-      vertical-align: middle;
-      align-self: center;
-      text-align: left; }
-      .home_banner_area .banner_inner .banner_content .media .d-flex {
-        padding-right: 125px; }
+      }
+      .home_banner_area .banner_inner .banner_content .media .d-flex {width: auto;}
       .home_banner_area .banner_inner .banner_content .media .media-body {
         vertical-align: middle;
         align-self: center; }
@@ -2697,6 +2701,11 @@ h6 {
   vertical-align: middle;
   align-self: center; }
 
+  .profile_text {
+
+    width: initial;
+  }
+
 .profile_inner {
   border-bottom: 1px solid #eeeeee; }
   .profile_inner .personal_text {
@@ -2709,7 +2718,8 @@ h6 {
   letter-spacing: 2.1px;
   font-weight: normal;
   margin-bottom: 12px;
-  color: #222222; }
+  color: #222222;
+  }
 .personal_text h4 {
   font-size: 16px;
   font-weight: 500;
@@ -2721,30 +2731,36 @@ h6 {
   font-size: 48px;
   text-transform: uppercase;
   margin-bottom: 15px;
-  color: #222222; }
+  color: #071af7;
+  }
 .personal_text p {
   font-family: "Roboto", sans-serif;
   max-width: 540px;
-  color: #777777;
-  margin-bottom: 40px; }
+  color: #000000;
+  margin-bottom: 40px;
+  }
 .personal_text .basic_info li {
   margin-bottom: 15px; }
   .personal_text .basic_info li a {
     position: relative;
-    padding-left: 40px;
-    font-size: 16px;
-    color: #777777; }
+    color: black;
+    font-size: 1; /* (16px * 1.20) * 0.95 */
+    padding-left: -1.1200000000000045px; /* (16px * 1.20) * 0.15 */
+    padding-left: -14px; /* (16px * 1.20) * 0.15 */
+    }
     .personal_text .basic_info li a i {
-      position: absolute;
+      position: relative;
       left: 0px;
       top: 50%;
       transform: translateY(-50%);
       font-size: 20px;
-      color: #766dff; }
+      color: #766dff;
+      }
   .personal_text .basic_info li:last-child {
-    margin-bottom: 0px; }
+    }
 .personal_text .personal_social {
-  margin-top: 45px; }
+  margin-top: 47px;
+  }
   .personal_text .personal_social li {
     display: inline-block;
     margin-right: 7px; }

@@ -123,7 +123,7 @@ dl,
 ol,
 ul {
     margin-top: 0;
-    margin-bottom: 1rem
+    margin-bottom: -2rem;
 }
 
 ol ol,
@@ -176,14 +176,14 @@ sup {
 }
 
 a {
-    color: #007bff;
+    color: #000000;
     text-decoration: none;
     background-color: transparent;
     -webkit-text-decoration-skip: objects
 }
 
 a:hover {
-    color: #0056b3;
+    color: #ff0023;
     text-decoration: underline
 }
 
@@ -223,7 +223,7 @@ figure {
 
 img {
     vertical-align: middle;
-    border-style: none
+    width: 100&;
 }
 
 svg {
@@ -5325,12 +5325,16 @@ input[type=submit].btn-block {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: start;
-    align-items: flex-start
+    align-items: flex-start;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .media-body {
     -ms-flex: 1;
-    flex: 1
+    flex: auto;
+    padding-left: 27px;
 }
 
 .list-group {
@@ -6578,7 +6582,8 @@ button.bg-dark:hover {
 
 .d-flex {
     display: -ms-flexbox !important;
-    display: flex !important
+    display: flex !important;
+    flex-direction: row;
 }
 
 .d-inline-flex {
